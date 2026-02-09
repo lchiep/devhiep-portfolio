@@ -1,0 +1,22 @@
+:root {
+  --bg-main: #0b061f;
+  --text-main: #ffffff;
+  --purple: #a855f7;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+.container {
+  padding: 0 80px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}

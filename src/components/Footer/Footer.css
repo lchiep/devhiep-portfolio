@@ -1,0 +1,131 @@
+.footer {
+  padding: 30px 50px 10px 50px;
+  background: radial-gradient(circle at top, #160726, #090312);
+  color: #ddd;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* LOGO */
+.footer-logo {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+/* SOCIAL */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(168, 85, 247, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c084fc;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background: #9333ea;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* LOCATION */
+.footer-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.vn-flag {
+  width: 20px;
+  height: 14px;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
+}
+
+/* COL */
+.footer-col h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.footer-col h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 36px;
+  height: 2px;
+  background: linear-gradient(90deg, #a855f7, #7c3aed);
+  border-radius: 2px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #c084fc;
+}
+
+/* CONTACT */
+.footer-col p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* QR */
+.qr-col img {
+  width: 110px;
+  margin: 10px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.5);
+}
+
+.qr-col span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+}

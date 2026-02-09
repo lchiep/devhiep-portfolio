@@ -1,0 +1,49 @@
+{
+  "heroTitle": "Backend Developer Intern",
+  "heroDesc": "I build APIs, Servers, Databases and efficient backend systems.",
+
+  "aboutSub": "Hi, I'm",
+  "aboutName": "DevHiep",
+  "aboutRole": "Backend Developer",
+  "aboutDesc": "I enjoy building system logic, APIs and server-side solutions.",
+  "aboutItem1": "System thinking & optimization",
+  "aboutItem2": "Backend – REST API – Database",
+  "aboutItem3": "Continuous learning",
+
+  "skillsTitle": "Skills",
+
+  "projectsTitle": "Projects",
+
+  "contactBtn": "Contact Me",
+  "downloadCV": "Download CV",
+
+  "timelineTitle": "My Journey as a Developer",
+
+  "timeline": [
+    {
+      "year": "2023",
+      "title": "Started Programming",
+      "desc": "Learned HTML, CSS. Understood layout, responsive design, basic UI."
+    },
+    {
+      "year": "2024",
+      "title": "JavaScript & Frontend",
+      "desc": "Core JavaScript, React.js, components, hooks, and state management."
+    },
+    {
+      "year": "2024",
+      "title": "Backend Developer",
+      "desc": "Node.js, Express, REST APIs, MongoDB, JWT Authentication."
+    },
+    {
+      "year": "2025",
+      "title": "Building Portfolio",
+      "desc": "Completed personal portfolio, optimized UI/UX and system logic."
+    },
+    {
+      "year": "Future",
+      "title": "Goal",
+      "desc": "Backend Intern → Fullstack Developer."
+    }
+  ]
+}

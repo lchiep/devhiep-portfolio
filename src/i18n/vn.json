@@ -1,0 +1,49 @@
+{
+  "heroTitle": "Backend Developer Intern",
+  "heroDesc": "Tôi xây dựng API, Server, Database và hệ thống Backend hiệu quả.",
+
+  "aboutSub": "Xin chào, tôi là",
+  "aboutName": "DevHiệp",
+  "aboutRole": "Backend Developer",
+  "aboutDesc": "Tôi yêu thích xây dựng logic hệ thống, API và giải pháp phía server.",
+  "aboutItem1": "Tư duy hệ thống & tối ưu",
+  "aboutItem2": "Backend – REST API – Database",
+  "aboutItem3": "Học hỏi mỗi ngày",
+
+  "skillsTitle": "Kỹ năng",
+
+  "projectsTitle": "Dự án",
+
+  "contactBtn": "Liên hệ",
+  "downloadCV": "Tải CV",
+
+  "timelineTitle": "Hành trình trở thành Developer",
+
+  "timeline": [
+    {
+      "year": "2023",
+      "title": "Bắt đầu lập trình",
+      "desc": "Làm quen HTML, CSS. Hiểu layout, responsive, UI cơ bản."
+    },
+    {
+      "year": "2024",
+      "title": "JavaScript & Frontend",
+      "desc": "JavaScript nền tảng, React.js, component, hooks, state."
+    },
+    {
+      "year": "2024",
+      "title": "Backend Developer",
+      "desc": "Node.js, Express, REST API, MongoDB, JWT Authentication."
+    },
+    {
+      "year": "2025",
+      "title": "Xây dựng Portfolio",
+      "desc": "Hoàn thiện portfolio cá nhân, tối ưu UI/UX & logic hệ thống."
+    },
+    {
+      "year": "Future",
+      "title": "Mục tiêu",
+      "desc": "Backend Intern → Fullstack Developer."
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+/* OVERLAY */
+.contact-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  backdrop-filter: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* MODAL */
+.contact-modal {
+  width: 100%;
+  max-width: 420px;
+  background: radial-gradient(circle at top, #1a082f, #0b0416);
+  border-radius: 18px;
+  padding: 28px 26px 30px;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  box-shadow: 0 0 50px rgba(168, 85, 247, 0.35);
+  position: relative;
+}
+
+/* TITLE */
+.contact-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #a855f7;
+
+}
+
+/* CLOSE */
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  color: #bbb;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+/* BUTTON */
+.send-btn {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #9333ea, #7c3aed);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, ;
+}
+
+.send-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+}
+
+/* STATUS */
+.status {
+  text-align: center;
+  font-size: 13px;
+  color: #9affc6;
+}
+
+/* POP */
+.pop-from-icon {
+  animation: popFromIcon 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes popFromIcon {
+  from {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ENVELOPE */
+.envelope {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+  pointer-events: none;
+}
+
+
+
+/* FLY DIRECTIONS */
+.fly-up {
+  animation: flyUp 0.9s ease forwards;
+}
+
+.fly-left {
+  animation: flyLeft 0.9s ease forwards;
+}
+
+.fly-right {
+  animation: flyRight 0.9s ease forwards;
+}
+
+@keyframes flyUp {
+  to {
+    transform: translateY(-140px) scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes flyLeft {
+  to {
+    transform: translateX(-160px) scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes flyRight {
+  to {
+    transform: translateX(160px) scale(0.3);
+    opacity: 0;
+  }
+}
+
+
+/* .success-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #4ade80;
+  color: #4ade80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-weight: bold;
+  font-size: 20px;
+} */
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* SUCCESS FLOATING (NO CARD) */
+/* SUCCESS FLOATING (NO BOX – NO OVERLAY) */
+.success-floating {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2000;
+  animation: successFade 0.4s ease forwards;
+}
+
+.success-check {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 3px solid #4ade80;
+  color: #4ade80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  box-shadow: 0 0 25px rgba(74, 222, 128, 0.6);
+}
+
+.success-floating h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.success-floating p {
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+@keyframes successFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ERROR */
+.error-text {
+  text-align: center;
+  font-size: 13px;
+  color: #ff6b6b;
+}
+
+.input-error {
+  border: 1px solid #ff6b6b;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.6);
+}

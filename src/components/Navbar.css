@@ -1,0 +1,87 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 6, 31, 0.9);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 90px; /* TO HƠN */
+}
+
+/* LOGO */
+.logo a {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logo a:hover {
+  color: #a855f7;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  align-items: center;
+}
+
+.menu li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: white; /* TRẮNG */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #a855f7;
+}
+
+/* LANG BUTTON */
+.lang-btn {
+  border: 1px solid #a855f7;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #a855f7;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.lang-btn:hover {
+  background: #a855f7;
+  color: white;
+}
+
+/* LOGOUT */
+.logout-btn {
+  background: #7f5af0;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .navbar {
+    padding: 20px;
+  }
+}
