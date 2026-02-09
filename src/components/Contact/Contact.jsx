@@ -3,6 +3,7 @@ import { FaPaperPlane, FaTimes, FaEnvelope } from "react-icons/fa"
 import "./Contact.css"
 
 const GMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@gmail\.com$/
+const API_URL = import.meta.env.VITE_API_URL
 
 const Contact = ({ onClose }) => {
   const [form, setForm] = useState({
@@ -37,11 +38,12 @@ const Contact = ({ onClose }) => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form)
       })
+
 
       if (res.ok) {
         const dirs = ["fly-up", "fly-left", "fly-right"]
