@@ -5,7 +5,7 @@ import Skills from "../components/Skills/Skills"
 import FloatingContact from "../components/Contact/FloatingContact"
 import Footer from "../components/Footer/Footer"
 import About from "../components/About/About"
-import Timeline from "../components/TimeLine/TimeLine"
+import Timeline from "../components/Timeline/Timeline"
 
 function Home() {
   return (
