@@ -75,6 +75,21 @@
   opacity: 0.85;
 }
 
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #9333ea;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.user-avatar:hover {
+  border-color: #c084fc;
+  transform: scale(1.1);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .menu {
