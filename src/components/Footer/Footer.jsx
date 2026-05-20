@@ -56,7 +56,7 @@ const Footer = () => {
         {/* COL 4 */}
         <div className="footer-col qr-col">
           <h4>QR Connect</h4>
-          <img src="/server/uploads/QR.jpg" alt="QR Connect" />
+          <img src="/server/uploads/https_devhiep-portfolio_vercel_app_png" alt="QR Connect" />
           <span>Scan to connect</span>
         </div>
 
