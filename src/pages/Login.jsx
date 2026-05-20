@@ -13,25 +13,16 @@ const Login = () => {
   const [loading, setLoading] = useState(false)
   const [mounted, setMounted] = useState(false)
 
-  // =========================
-  // MOUNT ANIMATION
-  // =========================
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 50)
     return () => clearTimeout(t)
   }, [])
 
-  // =========================
-  // AUTO REDIRECT IF LOGGED
-  // =========================
   useEffect(() => {
     const token = localStorage.getItem("token")
-    if (token) navigate("/admin")
+    if (token) navigate("/")
   }, [navigate])
 
-  // =========================
-  // HANDLE LOGIN
-  // =========================
   const handleSubmit = async (e) => {
     e.preventDefault()
 
@@ -44,7 +35,6 @@ const Login = () => {
       setLoading(true)
       setError("")
 
-      // ✅ FIX: dùng VITE_API_URL thay vì hardcode localhost
       const res = await fetch(`${API_URL}/api/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -60,7 +50,7 @@ const Login = () => {
       }
 
       localStorage.setItem("token", data.token)
-      navigate("/admin", { replace: true })
+      navigate("/", { replace: true })
     } catch (err) {
       console.error(err)
       setError("Cannot connect to server. Please try again.")
@@ -69,20 +59,15 @@ const Login = () => {
     }
   }
 
-  // =========================
-
   return (
     <div className={`login-root ${mounted ? "mounted" : ""}`}>
-      {/* Background grid */}
       <div className="login-bg">
         <div className="login-grid" />
         <div className="login-glow glow-1" />
         <div className="login-glow glow-2" />
       </div>
 
-      {/* Card */}
       <div className="login-card">
-        {/* Header */}
         <div className="login-header">
           <div className="login-logo">
             <span className="logo-bracket">&lt;</span>
@@ -92,7 +77,6 @@ const Login = () => {
           <p className="login-subtitle">Restricted access — authenticate to continue</p>
         </div>
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="login-form">
           <div className={`field-group ${username ? "has-value" : ""}`}>
             <label className="field-label">Username</label>
