@@ -57,7 +57,7 @@ const Footer = () => {
         <div className="footer-col qr-col">
           <h4>QR Connect</h4>
         <img 
-          src="https://devhiep-backend-1-i7ms.onrender.com/uploads/QR.png" 
+          src="client/public/QR.png" 
           alt="QR Connect" 
         />       
         <span>Scan to connect</span>
