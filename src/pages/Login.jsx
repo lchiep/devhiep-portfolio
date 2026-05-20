@@ -86,7 +86,6 @@ const Login = () => {
         <div className="login-header">
           <div className="login-logo">
             <span className="logo-bracket">&lt;</span>
-            <span className="logo-text">DH</span>
             <span className="logo-bracket">/&gt;</span>
           </div>
           <h1 className="login-title">Admin Portal</h1>
