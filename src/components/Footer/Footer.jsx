@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Hợp tác & Liên hệ</h4>
           <p><FaPhoneAlt /> 0985.xxx.xxx</p>
-          <p><FaEnvelope /> luu.........@gmail.com</p>
+          <p><FaEnvelope /> luuhiep123mc@gmail.com</p>
         </div>
 
         {/* COL 4 */}
